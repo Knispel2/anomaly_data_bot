@@ -3,7 +3,6 @@ from typing import List, Optional
 from beanie import Document
 from pydantic import Field
 from beanie import PydanticObjectId
-from database.connection import Database
 
 
 
