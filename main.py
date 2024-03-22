@@ -1,13 +1,12 @@
 import telebot
 from telebot import types
 from database.connection import Settings
-from models.base_types import User
-from database.connection import Database
+from database.connection import users
 
 settings = Settings()
 TOKEN = settings.TG_TOKEN
 bot = telebot.TeleBot(TOKEN)
-users = Database(User)
+
 
 
 @bot.message_handler(commands=['help'])

@@ -92,3 +92,6 @@ class Database:
             bot.send_message(message.from_user.id, "Успешно!")
         bot.send_message(message.from_user.id, "Что-то пошло не так. Вероятно, пользователь с таким именем не найден в базе")
 
+
+users = Database(User)
+
