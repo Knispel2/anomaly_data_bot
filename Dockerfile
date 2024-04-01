@@ -10,6 +10,8 @@ RUN pip install -r /app/requirements.txt
 
 EXPOSE 24000
 
+EXPOSE 443
+
 COPY ./ /app
 
 RUN pip config --user set global.progress_bar off
